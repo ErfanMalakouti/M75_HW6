@@ -1,0 +1,322 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  background-color: rgb(37, 35, 35);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+header {
+  display: flex;
+  background-color: #fdd935;
+  margin: 0;
+  padding: 30px 0px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 5px solid black;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.605);
+  z-index: 3;
+}
+#title {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+#logo {
+  padding-top: 12px;
+  padding-left: 10px;
+  font-size: 30px;
+  animation: heartbeat 1.2s linear 0s infinite alternate forwards;
+  text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.605);
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1.5);
+  }
+  5% {
+    transform: scale(1.4);
+  }
+  10% {
+    transform: scale(1.3);
+  }
+  15% {
+    transform: scale(1.6);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+#nav-bar {
+  position: sticky;
+  top: 0;
+  color: white;
+  background-color: black;
+  display: flex;
+  font-size: 25px;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 5px solid black;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.443);
+  z-index: 4;
+}
+#nav-bar > a {
+  padding: 30px 30px;
+}
+#nav-bar > a:hover {
+  background-color: #fdd935;
+  color: #000;
+  cursor: pointer;
+}
+#category {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 30px 10px;
+  font-size: 25px;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  outline: none;
+}
+#category:hover {
+  background-color: #fdd935;
+  color: #000;
+  cursor: pointer;
+}
+#category:focus {
+  background-color: #fdd935;
+  color: #000;
+  cursor: pointer;
+}
+#contact {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 30px 10px;
+  font-size: 25px;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  outline: none;
+}
+#contact:hover {
+  background-color: #fdd935;
+  color: #000;
+  cursor: pointer;
+}
+#contact:focus {
+  background-color: #fdd935;
+  color: #000;
+  cursor: pointer;
+}
+#search {
+  color: #fdd935;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  padding: 7.5px;
+  margin: 10px;
+  background-color: black;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.443);
+  z-index: 2;
+}
+#search:hover {
+  cursor: pointer;
+}
+#search-box {
+  position: absolute;
+  background-color: transparent;
+  padding: 5px 15px;
+  right: 20px;
+  top: 72px;
+  border: none;
+  border-bottom: 4px solid black;
+  outline: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.443);
+}
+#search-box:focus {
+  background-color: white;
+}
+::placeholder {
+  font-size: 20px;
+  color: black;
+  opacity: 1;
+}
+#fa {
+  color: black;
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  margin: 10px;
+}
+#fa:hover {
+  cursor: pointer;
+}
+#insta {
+  color: black;
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  margin: 10px;
+}
+#insta:hover {
+  cursor: pointer;
+}
+#tw {
+  color: black;
+  position: absolute;
+  left: 90px;
+  top: 60px;
+  margin: 10px;
+}
+#tw:hover {
+  cursor: pointer;
+}
+.main-title {
+  color: white;
+  margin: 5% 34% 5% 42%;
+  font-size: 40px;
+}
+#MovieContainer {
+  background-color: #fdd935;
+  display: flex;
+  margin: 0px 0px;
+  padding: 50px 0;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  overflow-x: scroll;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.783);
+}
+#MovieContainer img {
+  height: 450px;
+  width: 325px;
+}
+#MovieContainer::-webkit-scrollbar {
+  background: #fdd935;
+}
+#MovieContainer::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.6);
+}
+.item-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.783);
+  cursor: pointer;
+}
+.like-box {
+  color: white;
+  background-color: rgb(44, 44, 44);
+  display: inline;
+  font-size: 25px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.like-box div {
+  display: inline;
+  padding: 0px 10px;
+}
+.info {
+  color: white;
+  background-color: rgb(44, 44, 44);
+  font-size: 25px;
+  padding: 10px;
+}
+#SeriesContainer {
+  background-color: #fdd935;
+  display: flex;
+  margin: 80px 0px;
+  padding: 50px 0;
+  justify-content: center;
+  align-content: center;
+  overflow-x: auto;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.783);
+}
+#SeriesContainer img {
+  height: 450px;
+  width: 325px;
+}
+#SeriesContainer::-webkit-scrollbar {
+  background: #fdd935;
+}
+#SeriesContainer::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.6);
+}
+#AnimationsContainer {
+  background-color: #fdd935;
+  display: flex;
+  margin: 80px 0px 160px 0px;
+  padding: 50px 0;
+  justify-content: center;
+  align-content: center;
+  overflow-x: auto;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.783);
+}
+#AnimationsContainer img {
+  height: 450px;
+  width: 325px;
+}
+#AnimationsContainer::-webkit-scrollbar {
+  background: #fdd935;
+}
+#AnimationsContainer::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.6);
+}
+footer {
+  position: relative;
+  color: white;
+  background-color: black;
+  padding: 100px 0px;
+  border-top: 5px solid #fdd935;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.443);
+}
+footer a {
+  cursor: pointer;
+}
+#web-logo {
+  padding: 40px 40px;
+  position: absolute;
+  left: 3%;
+  top: 10%;
+  font-size: 40px;
+  border-right: 5px solid #fdd935;
+  cursor: pointer;
+}
+#web-info {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  padding-right: 40px;
+  font-size: 20px;
+  border-right: 5px solid #fdd935;
+}
+.info-color {
+  padding: 3px 50px 3px 0px;
+  color: #fdd935;
+}
+#companies img {
+  height: 40px;
+  width: 100px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+#companies-top {
+  right: 5%;
+  top: 15%;
+  position: absolute;
+}
+#companies-bottom {
+  right: 5%;
+  top: 50%;
+  position: absolute;
+}
+.item-box:nth-child(1) {
+  margin-left: 600px;
+}
