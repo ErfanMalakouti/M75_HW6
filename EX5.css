@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  background-image: url(./img1/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#container {
+  background-color: rgb(202, 202, 202);
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 80px;
+  padding: 280px 400px;
+  box-shadow: 50px 50px 5px rgba(0, 0, 0, 0.349);
+}
+#banner {
+  position: absolute;
+  display: inline-block;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin: 0;
+  right: 0%;
+  background-image: url(./img1/banner.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 30%;
+  top: 0;
+  bottom: 30%;
+}
+#title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+  position: absolute;
+  top: 12%;
+  left: 43%;
+}
+#input1 {
+  font-size: 16px;
+  text-align: left;
+  top: 35%;
+  left: 20%;
+  position: absolute;
+  border: none;
+  margin: 0;
+  padding: 10px 200px;
+  background-color: transparent;
+  border-bottom: 3px solid black;
+}
+#input1:focus {
+  outline: none;
+}
+#username {
+  position: absolute;
+  top: 37%;
+  left: 5%;
+  margin: 0;
+}
+#input2 {
+  font-size: 16px;
+  text-align: left;
+  top: 50%;
+  left: 20%;
+  position: absolute;
+  border: none;
+  margin: 0;
+  padding: 10px 200px;
+  background-color: transparent;
+  border-bottom: 3px solid black;
+}
+#input2:focus {
+  outline: none;
+}
+#password {
+  position: absolute;
+  top: 52%;
+  left: 5%;
+  margin: 0;
+}
+#check {
+  top: 65%;
+  left: 20%;
+  position: absolute;
+  display: inline-block;
+  color: black;
+}
+#forgot {
+  color: black;
+  position: absolute;
+  top: 65%;
+  right: 7%;
+  text-decoration: none;
+}
+#forgot:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#signIn {
+  position: absolute;
+  color: white;
+  background-color: rgb(129, 16, 16);
+  font-size: 25px;
+  font-weight: bold;
+  top: 80%;
+  left: 45%;
+  padding: 15px 65px 15px 20px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.349);
+}
+#signIn:hover {
+  background-color: rgb(88, 15, 15);
+  box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.349);
+  cursor: pointer;
+}
+#avatar1 {
+  color: rgb(129, 16, 16);
+  position: absolute;
+  top: 38%;
+  right: 6%;
+}
+#avatar2 {
+  color: rgb(129, 16, 16);
+  position: absolute;
+  top: 53%;
+  right: 6%;
+}
+#logIng {
+  color: white;
+  position: absolute;
+  top: 82.5%;
+  right: 39%;
+}
+::placeholder {
+  color: black;
+  opacity: 1;
+}
