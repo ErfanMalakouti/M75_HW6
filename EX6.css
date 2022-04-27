@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  background-image: url(./img2/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+}
+#container {
+  position: relative;
+  background-image: linear-gradient(
+    rgb(4, 4, 94),
+    rgb(7, 93, 163),
+    rgb(9, 119, 123)
+  );
+  background-size: cover;
+  border: none;
+  display: inline-block;
+  padding: 320px 200px;
+  margin: 60px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 5px rgba(0, 0, 0, 0.584);
+}
+#logo {
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  top: 10%;
+  right: 38%;
+  box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.584);
+  transition: all 1s ease-out;
+}
+#logo:hover {
+  cursor: pointer;
+  box-shadow: none;
+  padding: 25px;
+  transform: rotate(360deg);
+}
+#user {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  top: 40%;
+  right: 10%;
+  position: absolute;
+  border: none;
+  margin: 0;
+  padding: 10px 60px;
+  background-color: transparent;
+  border-bottom: 3px solid white;
+}
+#avatar {
+  color: white;
+  position: absolute;
+  top: 42%;
+  right: 83%;
+}
+#user:focus {
+  outline: none;
+}
+#pass {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  top: 50%;
+  right: 10%;
+  position: absolute;
+  border: none;
+  margin: 0;
+  padding: 10px 60px;
+  background-color: transparent;
+  border-bottom: 3px solid white;
+}
+#key {
+  color: white;
+  position: absolute;
+  top: 52%;
+  right: 83%;
+}
+#pass:focus {
+  outline: none;
+}
+#check {
+  color: white;
+  font-size: 18px;
+  top: 62%;
+  right: 52%;
+  position: absolute;
+  margin: 0;
+  display: inline-block;
+  background-color: transparent;
+}
+#submit {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding: 15px 40px;
+  position: absolute;
+  border: none;
+  border-radius: 50px;
+  top: 75%;
+  right: 36%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.674);
+}
+#submit:hover {
+  background-color: rgb(221, 221, 221);
+  text-decoration: underline;
+  cursor: pointer;
+}
+#footer {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  top: 93%;
+  right: 18%;
+  position: absolute;
+  border: none;
+  margin: 0;
+  padding: 0px 60px;
+  display: inline-block;
+  background-color: transparent;
+  text-decoration: none;
+}
+#footer:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1),
+    0 0 0 7px rgba(255, 255, 255, 0.1), 0 0 0 3px rgb(255, 255, 255);
+  animation: stars 2s linear infinite;
+}
+span:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, white, transparent);
+}
+@keyframes stars {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+span:nth-child(1) {
+  top: 0;
+  right: 0;
+  left: initial;
+  animation-delay: 0;
+  animation-duration: 1s;
+}
+
+span:nth-child(2) {
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+span:nth-child(3) {
+  top: 80px;
+  right: 0;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+span:nth-child(4) {
+  top: 0px;
+  right: 180px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+span:nth-child(5) {
+  top: 0px;
+  right: 400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+span:nth-child(6) {
+  top: 1000px;
+  right: 600px;
+  left: initial;
+  animation-delay: 0.3s;
+  animation-duration: 1.75s;
+}
+span:nth-child(7) {
+  top: 0px;
+  right: 700px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
+}
+span:nth-child(8) {
+  top: 1000px;
+  right: 900px;
+  left: initial;
+  animation-delay: 0s;
+  animation-duration: 2s;
+}
+span:nth-child(9) {
+  top: 1500px;
+  right: 1500px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 4s;
+}
+span:nth-child(10) {
+  top: 0px;
+  right: 1200px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 1.3s;
+}
